@@ -1,0 +1,11 @@
+#include"pair.h"
+using namespace std;
+
+int main () 
+{
+  Pair <double> myobject (1.012, 1.01234);
+	cout<<myobject.GetMax()<<endl;
+  cout<<myobject.GetMin()<<endl;
+	cout<<myobject<<endl;
+  return 0;
+}
