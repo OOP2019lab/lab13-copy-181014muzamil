@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+template <typename t,typename t2> 
+
+t GetMax(t a,t2 b)
+{
+	if(a>b)
+		return a;
+	else
+		return b;
+}
+
+template <typename t1,typename t3> 
+t1 GetMin(t1 a,t3 b)
+{
+	if(a<b)
+		return a;
+	else
+		return b;
+}
+
+//int main () 
+//{
+  //int i=5, j=6, k;
+  //long l=10, m=5, n;
+  //k=GetMax(i,j);
+  //n=GetMin(l,m);
+  //cout << k << endl;
+  //cout << n << endl;
+//  return 0;
+//}
+
+int main () 
+{
+  char i='Z';
+  int  j=6, k;
+  long l=10, m=5, n;
+  k=GetMax<int,long>(i,m);
+  n=GetMin<int,char>(j,l);
+  cout << k << endl;
+  cout << n << endl;
+  return 0;
+  //error by removing <int,long>etc
+  	//1	IntelliSense: no instance of function template "GetMax" matches the argument list
+   //         argument types are: (char, long)	c:\Users\Lab\Documents\Visual Studio 2012\Projects\oop lab 13\oop lab 13\main.cpp	39
+
+}
